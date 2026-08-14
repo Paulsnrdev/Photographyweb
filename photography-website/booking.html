@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Session — Lumière Studio</title>
+  <meta name="description" content="Book your photography session with Lumière Studio. Weddings, portraits, events and fashion. Simple, fast booking request." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="page-loader">
+  <div class="loader-logo">Lumière</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- NAV -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-name">Lumière</span>
+      <span class="logo-tagline">Photography Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html" class="nav-book active">Book Now</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="booking.html">Book Now</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background-image: url('https://picsum.photos/seed/booking_hero/1920/800');">
+  <div class="page-hero-content">
+    <span class="section-label">Reserve Your Date</span>
+    <h1>Book a Session</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Book a Session</p>
+  </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="booking-page">
+  <div class="container">
+    <div class="booking-grid">
+
+      <!-- INFO -->
+      <div class="booking-info fade-in-left">
+        <span class="section-label">Let's Create Something</span>
+        <h2>Begin Your<br><em>Visual Story</em></h2>
+        <div class="gold-divider" style="margin: 20px 0;"></div>
+        <p>
+          Whether you're planning a wedding, a personal portrait, a corporate event or a fashion editorial — we'd love to hear from you. Fill out the form and we'll get back to you within 24 hours to discuss your vision and confirm availability.
+        </p>
+        <p>
+          Every booking comes with a complimentary 30-minute pre-session consultation so we can ensure the day goes perfectly.
+        </p>
+
+        <div class="booking-details">
+
+          <div class="booking-detail-item">
+            <div class="booking-detail-icon">
+              <i class="fas fa-reply-all"></i>
+            </div>
+            <div class="booking-detail-text">
+              <h4>Fast Response</h4>
+              <p>All enquiries answered within 24 hours on business days.</p>
+            </div>
+          </div>
+
+          <div class="booking-detail-item">
+            <div class="booking-detail-icon">
+              <i class="far fa-calendar-check"></i>
+            </div>
+            <div class="booking-detail-text">
+              <h4>Flexible Scheduling</h4>
+              <p>Available evenings and weekends to suit your schedule.</p>
+            </div>
+          </div>
+
+          <div class="booking-detail-item">
+            <div class="booking-detail-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="booking-detail-text">
+              <h4>Secure Deposit</h4>
+              <p>A small deposit secures your date. Balance due on the day.</p>
+            </div>
+          </div>
+
+          <div class="booking-detail-item">
+            <div class="booking-detail-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="booking-detail-text">
+              <h4>Worldwide Travel</h4>
+              <p>Based in New York — happy to travel anywhere for your shoot.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="booking-form-container fade-in-right">
+        <h3>Request a Booking</h3>
+        <p>Fill in the details below and we'll confirm your session date.</p>
+
+        <!-- SUCCESS MESSAGE (shown after submit) -->
+        <div class="success-message">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h3>Booking Request Sent!</h3>
+          <p>Thank you for reaching out. We've received your booking request and will be in touch within 24 hours to confirm your session.</p>
+          <br />
+          <a href="index.html" class="btn btn-gold-outline" style="margin-top: 16px;">Return Home</a>
+        </div>
+
+        <!--
+          FORMSPREE SETUP:
+          1. Go to https://formspree.io and create a free account.
+          2. Create a new form — copy the form ID (e.g. xabc1234).
+          3. Replace YOUR_FORM_ID below with your actual Formspree form ID.
+        -->
+        <form id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name <span style="color:var(--gold)">*</span></label>
+              <input type="text" id="full-name" name="full_name" placeholder="Your full name" required />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span style="color:var(--gold)">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (000) 000-0000" />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Type <span style="color:var(--gold)">*</span></label>
+              <select id="service" name="service_type" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option value="Wedding Photography">Wedding Photography</option>
+                <option value="Engagement Session">Engagement Session</option>
+                <option value="Portrait Session">Portrait Session</option>
+                <option value="Family Portrait">Family Portrait</option>
+                <option value="Event Coverage">Event Coverage</option>
+                <option value="Fashion / Editorial">Fashion / Editorial</option>
+                <option value="Commercial Photography">Commercial Photography</option>
+                <option value="Other">Other — please describe</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date <span style="color:var(--gold)">*</span></label>
+              <input type="date" id="preferred-date" name="preferred_date" required />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="location">Session Location</label>
+              <input type="text" id="location" name="location" placeholder="City, venue or TBD" />
+              <span class="error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Approximate Budget</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Select a range…</option>
+              <option value="Under $500">Under $500</option>
+              <option value="$500 – $1,000">$500 – $1,000</option>
+              <option value="$1,000 – $2,500">$1,000 – $2,500</option>
+              <option value="$2,500 – $5,000">$2,500 – $5,000</option>
+              <option value="$5,000+">$5,000+</option>
+              <option value="Open to discuss">Open to discuss</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Extra Details <span style="color:var(--gold)">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your vision, special requests, or any details we should know…" required></textarea>
+            <span class="error-msg"></span>
+          </div>
+
+          <!-- Honeypot anti-spam field (hidden) -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_subject" value="New Booking Request — Lumière Studio" />
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              <i class="far fa-paper-plane"></i> Send Booking Request
+            </button>
+            <p class="form-note">
+              <i class="fas fa-shield-alt" style="color:var(--gold);margin-right:6px;"></i>
+              Your information is kept strictly private. We never share your details.
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-name">Lumière</div>
+        <span class="logo-tagline">Photography Studio</span>
+        <p>Award-winning photography capturing life's most precious moments. Based in New York, available worldwide.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#weddings">Wedding</a></li>
+          <li><a href="services.html#portraits">Portraits</a></li>
+          <li><a href="services.html#events">Events</a></li>
+          <li><a href="services.html#fashion">Fashion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+1 (212) 555-0192</span></div>
+        <div class="footer-contact-item"><i class="far fa-envelope"></i><span>hello@lumierestudio.com</span></div>
+        <div class="footer-contact-item"><i class="far fa-clock"></i><span>Mon–Sat: 9am – 7pm</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lumière Photography Studio. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+</body>
+</html>

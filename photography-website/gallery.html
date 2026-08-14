@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Lumière Studio</title>
+  <meta name="description" content="Browse our photography portfolio — weddings, portraits, events, fashion, nature and commercial work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="page-loader">
+  <div class="loader-logo">Lumière</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- NAV -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-name">Lumière</span>
+      <span class="logo-tagline">Photography Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html" class="nav-book">Book Now</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="booking.html">Book Now</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background-image: url('https://picsum.photos/seed/gallery_hero/1920/800');">
+  <div class="page-hero-content">
+    <span class="section-label">Visual Stories</span>
+    <h1>Our Gallery</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Gallery</p>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="gallery-filter-bar">
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-category="all">All Work</button>
+      <button class="filter-tab" data-category="weddings">Weddings</button>
+      <button class="filter-tab" data-category="portraits">Portraits</button>
+      <button class="filter-tab" data-category="events">Events</button>
+      <button class="filter-tab" data-category="fashion">Fashion</button>
+      <button class="filter-tab" data-category="nature">Nature</button>
+      <button class="filter-tab" data-category="commercial">Commercial</button>
+    </div>
+  </div>
+</div>
+
+<!-- MASONRY GRID -->
+<section class="masonry-section">
+  <div class="container">
+    <div class="masonry-grid" id="masonry-grid">
+
+      <!-- WEDDINGS -->
+      <div class="masonry-item" data-category="weddings" data-title="Sacred Vows">
+        <img src="https://picsum.photos/seed/wed1/700/980" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Sacred Vows</span></div>
+      </div>
+      <div class="masonry-item" data-category="portraits" data-title="Golden Hour">
+        <img src="https://picsum.photos/seed/port1/700/900" alt="Portrait Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Golden Hour</span></div>
+      </div>
+      <div class="masonry-item" data-category="fashion" data-title="Editorial I">
+        <img src="https://picsum.photos/seed/fash1/700/1000" alt="Fashion Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Editorial I</span></div>
+      </div>
+      <div class="masonry-item" data-category="weddings" data-title="First Dance">
+        <img src="https://picsum.photos/seed/wed2/700/500" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">First Dance</span></div>
+      </div>
+      <div class="masonry-item" data-category="events" data-title="Gala Night">
+        <img src="https://picsum.photos/seed/evt1/700/600" alt="Event Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Gala Night</span></div>
+      </div>
+      <div class="masonry-item" data-category="nature" data-title="Morning Mist">
+        <img src="https://picsum.photos/seed/nat1/700/900" alt="Nature Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Morning Mist</span></div>
+      </div>
+      <div class="masonry-item" data-category="portraits" data-title="Quiet Strength">
+        <img src="https://picsum.photos/seed/port2/700/700" alt="Portrait Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Quiet Strength</span></div>
+      </div>
+      <div class="masonry-item" data-category="weddings" data-title="Ceremony Bloom">
+        <img src="https://picsum.photos/seed/wed3/700/1050" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Ceremony Bloom</span></div>
+      </div>
+      <div class="masonry-item" data-category="commercial" data-title="Brand Identity">
+        <img src="https://picsum.photos/seed/com1/700/550" alt="Commercial Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Brand Identity</span></div>
+      </div>
+      <div class="masonry-item" data-category="fashion" data-title="Monochrome">
+        <img src="https://picsum.photos/seed/fash2/700/900" alt="Fashion Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Monochrome</span></div>
+      </div>
+      <div class="masonry-item" data-category="events" data-title="Product Launch">
+        <img src="https://picsum.photos/seed/evt2/700/600" alt="Event Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Product Launch</span></div>
+      </div>
+      <div class="masonry-item" data-category="nature" data-title="Forest Light">
+        <img src="https://picsum.photos/seed/nat2/700/800" alt="Nature Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Forest Light</span></div>
+      </div>
+      <div class="masonry-item" data-category="weddings" data-title="Garden Romance">
+        <img src="https://picsum.photos/seed/wed4/700/700" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Garden Romance</span></div>
+      </div>
+      <div class="masonry-item" data-category="portraits" data-title="The Artist">
+        <img src="https://picsum.photos/seed/port3/700/950" alt="Portrait Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">The Artist</span></div>
+      </div>
+      <div class="masonry-item" data-category="commercial" data-title="Lifestyle Shoot">
+        <img src="https://picsum.photos/seed/com2/700/600" alt="Commercial Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Lifestyle Shoot</span></div>
+      </div>
+      <div class="masonry-item" data-category="fashion" data-title="Couture Series">
+        <img src="https://picsum.photos/seed/fash3/700/1000" alt="Fashion Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Couture Series</span></div>
+      </div>
+      <div class="masonry-item" data-category="events" data-title="Anniversary Gala">
+        <img src="https://picsum.photos/seed/evt3/700/650" alt="Event Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Anniversary Gala</span></div>
+      </div>
+      <div class="masonry-item" data-category="weddings" data-title="Cathedral Light">
+        <img src="https://picsum.photos/seed/wed5/700/900" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Cathedral Light</span></div>
+      </div>
+      <div class="masonry-item" data-category="nature" data-title="Coastal Dusk">
+        <img src="https://picsum.photos/seed/nat3/700/500" alt="Nature Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Coastal Dusk</span></div>
+      </div>
+      <div class="masonry-item" data-category="portraits" data-title="Childhood Joy">
+        <img src="https://picsum.photos/seed/port4/700/800" alt="Portrait Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Childhood Joy</span></div>
+      </div>
+      <div class="masonry-item" data-category="commercial" data-title="Product Art">
+        <img src="https://picsum.photos/seed/com3/700/700" alt="Commercial Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Product Art</span></div>
+      </div>
+      <div class="masonry-item" data-category="fashion" data-title="Runway Dreams">
+        <img src="https://picsum.photos/seed/fash4/700/950" alt="Fashion Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Runway Dreams</span></div>
+      </div>
+      <div class="masonry-item" data-category="weddings" data-title="Sunset Vows">
+        <img src="https://picsum.photos/seed/wed6/700/600" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Sunset Vows</span></div>
+      </div>
+      <div class="masonry-item" data-category="events" data-title="Award Ceremony">
+        <img src="https://picsum.photos/seed/evt4/700/700" alt="Event Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Award Ceremony</span></div>
+      </div>
+      <div class="masonry-item" data-category="nature" data-title="Mountain Dawn">
+        <img src="https://picsum.photos/seed/nat4/700/900" alt="Nature Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Mountain Dawn</span></div>
+      </div>
+      <div class="masonry-item" data-category="portraits" data-title="Senior Grace">
+        <img src="https://picsum.photos/seed/port5/700/850" alt="Portrait Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Senior Grace</span></div>
+      </div>
+      <div class="masonry-item" data-category="commercial" data-title="Hotel Campaign">
+        <img src="https://picsum.photos/seed/com4/700/550" alt="Commercial Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Hotel Campaign</span></div>
+      </div>
+      <div class="masonry-item" data-category="fashion" data-title="Avant-Garde">
+        <img src="https://picsum.photos/seed/fash5/700/1000" alt="Fashion Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Avant-Garde</span></div>
+      </div>
+      <div class="masonry-item" data-category="weddings" data-title="After the Kiss">
+        <img src="https://picsum.photos/seed/wed7/700/800" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">After the Kiss</span></div>
+      </div>
+      <div class="masonry-item" data-category="nature" data-title="Wildflower">
+        <img src="https://picsum.photos/seed/nat5/700/600" alt="Nature Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Wildflower</span></div>
+      </div>
+      <div class="masonry-item" data-category="events" data-title="Charity Ball">
+        <img src="https://picsum.photos/seed/evt5/700/750" alt="Event Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Charity Ball</span></div>
+      </div>
+      <div class="masonry-item" data-category="commercial" data-title="Food Editorial">
+        <img src="https://picsum.photos/seed/com5/700/800" alt="Commercial Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Food Editorial</span></div>
+      </div>
+      <div class="masonry-item" data-category="portraits" data-title="Maternity">
+        <img src="https://picsum.photos/seed/port6/700/950" alt="Portrait Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Maternity</span></div>
+      </div>
+      <div class="masonry-item" data-category="fashion" data-title="Street Style">
+        <img src="https://picsum.photos/seed/fash6/700/700" alt="Fashion Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Street Style</span></div>
+      </div>
+      <div class="masonry-item" data-category="weddings" data-title="Table Romance">
+        <img src="https://picsum.photos/seed/wed8/700/550" alt="Wedding Photography" loading="lazy" />
+        <div class="masonry-overlay"><div class="expand-icon"><i class="fas fa-expand-alt"></i></div><span class="photo-title">Table Romance</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band-content fade-in">
+      <span class="section-label">Let's Work Together</span>
+      <h2 class="section-title">Love What You See?</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">Let's create images that move you. Book your personalised session today.</p>
+      <div class="cta-band-buttons">
+        <a href="booking.html" class="btn btn-primary"><i class="far fa-calendar-check"></i> Book Your Session</a>
+        <a href="services.html" class="btn btn-outline">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-name">Lumière</div>
+        <span class="logo-tagline">Photography Studio</span>
+        <p>Award-winning photography capturing life's most precious moments. Based in New York, available worldwide.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#weddings">Wedding</a></li>
+          <li><a href="services.html#portraits">Portraits</a></li>
+          <li><a href="services.html#events">Events</a></li>
+          <li><a href="services.html#fashion">Fashion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+1 (212) 555-0192</span></div>
+        <div class="footer-contact-item"><i class="far fa-envelope"></i><span>hello@lumierestudio.com</span></div>
+        <div class="footer-contact-item"><i class="far fa-clock"></i><span>Mon–Sat: 9am – 7pm</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lumière Photography Studio. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <div class="lightbox-img-wrap">
+    <img id="lightbox-img" src="" alt="Gallery photo" />
+    <p class="lightbox-caption"></p>
+  </div>
+  <button class="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-counter"></div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
