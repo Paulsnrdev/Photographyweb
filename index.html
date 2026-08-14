@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière Studio — Premium Photography</title>
+  <meta name="description" content="Award-winning photography studio specialising in weddings, portraits, events and fashion. Capturing moments that last forever." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== PAGE LOADER ===== -->
+<div class="page-loader" id="loader">
+  <div class="loader-logo">Lumière</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-name">Lumière</span>
+      <span class="logo-tagline">Photography Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html" class="nav-book">Book Now</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="booking.html">Book Now</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-slider">
+    <div class="hero-slide" style="background-image: url('https://picsum.photos/seed/lum_hero1/1920/1080');"></div>
+    <div class="hero-slide" style="background-image: url('https://picsum.photos/seed/lum_hero2/1920/1080');"></div>
+    <div class="hero-slide" style="background-image: url('https://picsum.photos/seed/lum_hero3/1920/1080');"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow">Award-Winning Photography</span>
+    <h1 class="hero-title">
+      Capturing Moments<br>That Last <em>Forever</em>
+    </h1>
+    <p class="hero-subtitle">
+      Premium photography studio specialising in weddings, portraits, events and fashion. Every frame tells a story.
+    </p>
+    <div class="hero-buttons">
+      <a href="gallery.html" class="btn btn-primary">
+        <i class="fas fa-images"></i> View Gallery
+      </a>
+      <a href="booking.html" class="btn btn-outline">
+        <i class="far fa-calendar-alt"></i> Book a Session
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+
+  <div class="hero-dots">
+    <span class="hero-dot active"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+  </div>
+</section>
+
+<!-- ===== ABOUT PREVIEW ===== -->
+<section class="about-preview">
+  <div class="container">
+    <div class="about-preview-grid">
+
+      <div class="about-preview-image fade-in-left">
+        <img src="https://picsum.photos/seed/photographer_about/600/750" alt="Photographer at work" loading="lazy" />
+        <div class="about-image-frame"></div>
+      </div>
+
+      <div class="about-preview-content fade-in-right">
+        <div class="experience-badge">
+          <span class="years">12</span>
+          <span class="label">Years Exp.</span>
+        </div>
+        <span class="section-label">About the Artist</span>
+        <h2 class="section-title">Passion Meets<br>Technical Mastery</h2>
+        <p>
+          I'm Elara Monroe — a visual storyteller with over a decade of experience capturing life's most precious moments. From intimate portraits to grand wedding celebrations, I approach every shoot with an artist's eye and a technical expert's precision.
+        </p>
+        <p>
+          My work has been featured in <em>Vogue</em>, <em>Harper's Bazaar</em>, and numerous international publications. I believe that the best photographs are not taken — they are discovered in the fleeting magic between poses and plans.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">850+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">34</span>
+            <span class="stat-label">Awards Won</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">12K+</span>
+            <span class="stat-label">Photos Delivered</span>
+          </div>
+        </div>
+
+        <a href="about.html" class="btn btn-gold-outline">
+          Discover My Story <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED GALLERY ===== -->
+<section class="featured-gallery">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Portfolio Highlights</span>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">A curated selection of our finest photographs spanning weddings, portraits, events and fashion.</p>
+    </div>
+
+    <div class="gallery-categories fade-in">
+      <button class="cat-btn active" data-category="all">All</button>
+      <button class="cat-btn" data-category="weddings">Weddings</button>
+      <button class="cat-btn" data-category="portraits">Portraits</button>
+      <button class="cat-btn" data-category="events">Events</button>
+      <button class="cat-btn" data-category="fashion">Fashion</button>
+    </div>
+
+    <div class="featured-grid">
+      <div class="featured-item" data-category="weddings" data-title="Golden Hour Wedding">
+        <img src="https://picsum.photos/seed/feat_wed1/900/600" alt="Wedding Photography" loading="lazy" />
+        <div class="featured-overlay">
+          <span>Weddings</span>
+          <h3>Golden Hour Love</h3>
+        </div>
+      </div>
+      <div class="featured-item" data-category="portraits" data-title="Studio Portrait">
+        <img src="https://picsum.photos/seed/feat_port1/600/500" alt="Portrait Photography" loading="lazy" />
+        <div class="featured-overlay">
+          <span>Portraits</span>
+          <h3>Studio Elegance</h3>
+        </div>
+      </div>
+      <div class="featured-item" data-category="fashion" data-title="Fashion Editorial">
+        <img src="https://picsum.photos/seed/feat_fash1/600/500" alt="Fashion Photography" loading="lazy" />
+        <div class="featured-overlay">
+          <span>Fashion</span>
+          <h3>Editorial Series</h3>
+        </div>
+      </div>
+      <div class="featured-item" data-category="events" data-title="Corporate Gala">
+        <img src="https://picsum.photos/seed/feat_evt1/600/500" alt="Event Photography" loading="lazy" />
+        <div class="featured-overlay">
+          <span>Events</span>
+          <h3>Corporate Gala</h3>
+        </div>
+      </div>
+      <div class="featured-item" data-category="portraits" data-title="Natural Light Portrait">
+        <img src="https://picsum.photos/seed/feat_port2/600/500" alt="Portrait Photography" loading="lazy" />
+        <div class="featured-overlay">
+          <span>Portraits</span>
+          <h3>Natural Light</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-view-all fade-in">
+      <a href="gallery.html" class="btn btn-gold-outline">
+        View Full Gallery <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES PREVIEW ===== -->
+<section class="services-preview">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Photography Services</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">From intimate portraits to grand celebrations — every service is delivered with artistry and precision.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card fade-in">
+        <div class="service-card-image">
+          <img src="https://picsum.photos/seed/svc_wedding/700/400" alt="Wedding Photography" loading="lazy" />
+          <div class="service-card-image-overlay"></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Wedding Photography</h3>
+          <p>Timeless, cinematic coverage of your most important day. From getting ready to the last dance.</p>
+          <a href="services.html#weddings" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card-image">
+          <img src="https://picsum.photos/seed/svc_portrait/700/400" alt="Portrait Photography" loading="lazy" />
+          <div class="service-card-image-overlay"></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Portrait Sessions</h3>
+          <p>Individual, couple or family portraits crafted in-studio or on location — always breathtakingly real.</p>
+          <a href="services.html#portraits" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card-image">
+          <img src="https://picsum.photos/seed/svc_event/700/400" alt="Event Photography" loading="lazy" />
+          <div class="service-card-image-overlay"></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Event Coverage</h3>
+          <p>Corporate galas, launches, concerts and private parties — every milestone documented beautifully.</p>
+          <a href="services.html#events" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card-image">
+          <img src="https://picsum.photos/seed/svc_fashion/700/400" alt="Fashion Photography" loading="lazy" />
+          <div class="service-card-image-overlay"></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Fashion Shoots</h3>
+          <p>High-end editorial and commercial fashion photography for designers, brands and modelling portfolios.</p>
+          <a href="services.html#fashion" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Client Love</span>
+      <h2 class="section-title">What They Say</h2>
+      <div class="gold-divider"></div>
+    </div>
+
+    <div class="testimonials-wrapper">
+      <div class="testimonials-track">
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+          </div>
+          <p class="testimonial-text">Elara captured our wedding day in a way that still takes our breath away. Every photo feels like a painting. We couldn't have asked for a more talented and professional photographer.</p>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://picsum.photos/seed/av1/100/100" alt="Sarah & James" loading="lazy" />
+            <div>
+              <p class="author-name">Sarah &amp; James</p>
+              <span class="author-type">Wedding Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+          </div>
+          <p class="testimonial-text">The portrait session was an unforgettable experience. Elara has a gift for making you feel completely at ease, and the results are simply stunning. I've already booked my next session.</p>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://picsum.photos/seed/av2/100/100" alt="Amara N." loading="lazy" />
+            <div>
+              <p class="author-name">Amara Ndiaye</p>
+              <span class="author-type">Portrait Client</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+          </div>
+          <p class="testimonial-text">Our brand launch event was covered flawlessly. The team delivered 300+ edited images within 48 hours. The quality and turnaround time exceeded all expectations. Highly recommended.</p>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://picsum.photos/seed/av3/100/100" alt="Marcus T." loading="lazy" />
+            <div>
+              <p class="author-name">Marcus Thorne</p>
+              <span class="author-type">Corporate Client</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+          </div>
+          <p class="testimonial-text">Lumière Studio gave my fashion label the visual identity it deserved. The editorial shoot was bold, creative, and absolutely on-brand. I trust no one else with my work.</p>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://picsum.photos/seed/av4/100/100" alt="Isabelle C." loading="lazy" />
+            <div>
+              <p class="author-name">Isabelle Carta</p>
+              <span class="author-type">Fashion Designer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-stars">
+            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+          </div>
+          <p class="testimonial-text">From first contact to final delivery, the professionalism was impeccable. Our family portraits are now the centrepiece of our home. Simply beautiful work.</p>
+          <div class="testimonial-author">
+            <img class="author-avatar" src="https://picsum.photos/seed/av5/100/100" alt="The Williams Family" loading="lazy" />
+            <div>
+              <p class="author-name">The Williams Family</p>
+              <span class="author-type">Family Portrait</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="testimonials-nav">
+      <button class="test-prev" aria-label="Previous">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="test-next" aria-label="Next">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band-content fade-in">
+      <span class="section-label">Ready to Begin?</span>
+      <h2 class="section-title">Your Story Deserves to Be<br><em>Beautifully Told</em></h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">Spaces fill quickly. Secure your session date today and let's create images that move you.</p>
+      <div class="cta-band-buttons">
+        <a href="booking.html" class="btn btn-primary">
+          <i class="far fa-calendar-check"></i> Book Your Session
+        </a>
+        <a href="contact.html" class="btn btn-outline">
+          <i class="far fa-envelope"></i> Get in Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="logo-name">Lumière</div>
+        <span class="logo-tagline">Photography Studio</span>
+        <p>Award-winning photography capturing life's most precious moments with artistry, precision and heart. Based in New York, available worldwide.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Book a Session</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#weddings">Wedding Photography</a></li>
+          <li><a href="services.html#portraits">Portrait Sessions</a></li>
+          <li><a href="services.html#events">Event Coverage</a></li>
+          <li><a href="services.html#fashion">Fashion Shoots</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>123 Fifth Avenue, New York, NY 10001</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+1 (212) 555-0192</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="far fa-envelope"></i>
+          <span>hello@lumierestudio.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="far fa-clock"></i>
+          <span>Mon–Sat: 9am – 7pm</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lumière Photography Studio. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <div class="lightbox-img-wrap">
+    <img id="lightbox-img" src="" alt="Gallery image" />
+    <p class="lightbox-caption"></p>
+  </div>
+  <button class="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-counter"></div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>

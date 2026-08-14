@@ -67,6 +67,10 @@ The contact and booking forms submit to Formspree. Before deploying, replace the
 
 ## External Dependencies
 
+Loaded via CDN — no local install needed:
+
+- [Google Fonts](https://fonts.google.com) — Playfair Display, Montserrat
+- [Font Awesome](https://fontawesome.com) — icons
 
 ## Deployment
 
